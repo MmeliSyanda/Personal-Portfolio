@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mmeli Cele</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#foot">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="container">
+        <img src="Images/IMG-20230710-WA0147.jpg" alt="Profile Photo" class="profile-img">
+        <div class="text-box">
+            <h1>Hi, I'm <span>Mmeli Cele</span></h1>
+            <p>I'm a <strong>Software Developer</strong> passionate about building modern and efficient applications.</p>
+        </div>
+    </section>
+
+  <!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm an innovative software developer with a passion for creating modern web applications and problem-solving through technology.</p>
+    <p>I am also very interested in gaming and want to take my gaming experience to the next level by exploring new technologies in game development.</p>
+    <p>
+
+    <!-- Gallery Section with Circular Hover Effect -->
+    <div class="gallery-container">
+        <div class="gallery-buttons">
+            <button onclick="showGallery('me')">Me</button>
+            <button onclick="showGallery('gaming')">Gaming Events</button>
+            <button onclick="showGallery('family')">Family and Friends</button>
+            
+        </div>
+        
+        <div class="gallery-wrapper">
+            <div id="me" class="gallery active">
+                <img src="Images/IMG-20231231-WA0016.jpg" alt="Me">
+                <img src="Images/IMG-20230710-WA0147.jpg" alt="Me">
+                <img src="Images/WhatsApp Image 2025-03-01 at 16.40.28_7e76ea65.jpg" alt="Me">
+                <img src="Images/IMG-20240716-WA0067.jpg" alt="Me">
+            </div>
+            <div id="gaming" class="gallery">
+                <img src="Images/IMG-20240810-WA0037.jpg" alt="Gaming Event">
+                <img src="Images/IMG-20240504-WA0029.jpg" alt="Gaming Event">
+                <img src="Images/IMG-20250421-WA0031.jpg" alt="Gaming Event">
+            </div>
+            <div id="family" class="gallery">
+                <img src="Images/IMG-20250126-WA0030.jpg" alt="Family">
+                <img src="Images/IMG-20240419-WA0037.jpg" alt="Family">
+                <img src="Images/IMG_0678.jpg" alt="Family">
+                <img src="Images/IMG-20250322-WA0029.jpg" alt="Family">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Interests Section -->
+    <section id="interests">
+    <h2>Interests</h2>
+    <p>I enjoy coding, AI development, and keeping up with the latest technology trends.</p>
+    <p>I attend tech community events and network with other IT professionals to grow and share knowledge.</p>
+    <p>I'm passionate about participating in hackathons and solving real-world problems through technology.</p>
+    <p>I have a strong interest in developing safety-focused applications and using tech for social impact.</p>
+    <p>Learning about machine learning, cloud tools like Firebase, and improving my mobile/web development skills are part of my personal growth goals.</p>
+</section>
+
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Collaboratively developed a web-based application that stores and manages data in a database as part of a class project.</li>
+        <li>Designed and built this personal portfolio from scratch, demonstrating skills in web development and self-directed learning.</li>
+        <li>Implemented machine learning models for resource demand forecasting using time series analysis, contributing to sustainable growth projects.</li>
+        <li>Volunteered to mentor peers in web development, assisting with foundational skills and project guidance.</li>
+        <li>Consistently maintained strong academic performance throughout the IT diploma program while balancing extracurricular projects.</li>
+    </ul>
+</section>
+
+
+
+    <!-- Goals Section -->
+   <section id="goals">
+    <h2>Goals</h2>
+    <ul>
+        <li>Become a skilled full-stack developer capable of building scalable web and mobile applications.</li>
+        <li>Contribute to open-source projects and collaborate with global developer communities.</li>
+        <li>Launch a community-focused app for financial empowerment of local economy.</li>
+        <li>Advance my knowledge in AI and machine learning, with a focus on solving real-world problems.</li>
+        <li>Continue participating in hackathons and tech community events to grow my skills and network.</li>
+        <li>Mentor and support aspiring young tech students, especially those from underrepresented backgrounds.</li>
+        <li>Secure an internship or graduate opportunity in a tech-driven organization to gain industry experience.</li>
+    </ul>
+</section>
+
+
+    <script src="functionality.js"></script>
+</body>
+</html>
+
+<style>
+.card-gallery {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+    border: 3px solid #00AEEF;
+}
+
+.gallery-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes moveToBack {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(25px) scale(0.93); }
+}
+</style>
+
+<footer id="foot">
+    <div class="footer-content">
+        <p>Contact: <a href="mailto:mmelisyanda135@gmail.com">mmelisyanda135.com</a></p>
+        <p>
+            Connect with me:
+            <a href="https://www.linkedin.com/in/mmeli-cele-ba9a3535a" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/MmeliSyanda/" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2025 MMELI CELE. All rights reserved.</p>
+    </div>
+</footer>
+
+
